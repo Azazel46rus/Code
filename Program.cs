@@ -27,7 +27,7 @@ namespace Homework_Theme_03
             {
                 Console.WriteLine($"Ход игрока {player1}");
                 player1Number = int.Parse(Console.ReadLine());
-                if (player1Number < 0 || player1Number > 5)
+                if (player1Number < 0 || player1Number > 4)
                 {
                     Console.WriteLine("Вы ввели недопустимое значение. Повторите попытку");
                     continue;
@@ -43,7 +43,7 @@ namespace Homework_Theme_03
 
                 Console.WriteLine($"Ход игрока {player2}");
                 player2Number = int.Parse(Console.ReadLine());
-                if (player2Number < 0 || player2Number > 5)
+                if (player2Number < 0 || player2Number > 4)
                 {
                     Console.WriteLine("Вы ввели недопустимое значение. Повторите попытку");
                     continue;
