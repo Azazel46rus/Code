@@ -24,13 +24,13 @@ namespace Homework_Theme_03
             int player1Number = 0;
             int player2Number = 0;
 
-            while ( curentValue > 0 && curentValue != 0)
+            while ( curentValue > 0)
             {
                 Console.WriteLine($"Ход игрока {player1}");
                 player1Number = int.Parse(Console.ReadLine());
 
                 while (player1Number < 0 || player1Number > 4)
-                {
+                {   player1Number = 0;
                     Console.WriteLine("Вы ввели недопустимое значение. Повторите попытку");
                     player1Number = int.Parse(Console.ReadLine());
                 }
@@ -47,7 +47,7 @@ namespace Homework_Theme_03
                 Console.WriteLine($"Ход игрока {player2}");
                 player2Number = int.Parse(Console.ReadLine());
                 while (player2Number < 0 || player2Number > 4)
-                {
+                {   player2Number = 0;
                     Console.WriteLine("Вы ввели недопустимое значение. Повторите попытку");
                     player2Number = int.Parse(Console.ReadLine());
                 }
